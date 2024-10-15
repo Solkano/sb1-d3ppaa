@@ -1,0 +1,44 @@
+{
+  "name": "multi-platform-delivery-app",
+  "main": "src/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "~8.8.0",
+    "@react-native-async-storage/async-storage": "^1.18.1",
+    "@react-native-community/geolocation": "^3.0.6",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/stack": "^6.3.16",
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0",
+    "react": "^18.2.0",
+    "react-native-maps": "^1.7.1",
+    "react-native-push-notification": "^8.1.1",
+    "react-native-stripe-sdk": "^0.0.1",
+    "react-nativescript": "^5.0.0",
+    "react-nativescript-navigation": "^5.0.0",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "@nativescript/preview-cli": "1.0.13",
+    "@nativescript/stackblitz": "0.0.8",
+    "@nativescript/tailwind": "^2.1.0",
+    "@nativescript/types-minimal": "~8.8.0",
+    "@nativescript/webpack": "~5.0.8",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/react": "npm:types-react-without-jsx-intrinsics@^18.0.17",
+    "tailwindcss": "~3.4.0",
+    "typescript": "~5.4.0"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "start:backend": "node src/backend/server.js",
+    "start:customer": "ns run android --bundle",
+    "start:driver": "ns run android --bundle",
+    "start:admin": "ns preview"
+  }
+}
